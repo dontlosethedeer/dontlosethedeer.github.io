@@ -242,6 +242,131 @@
 </noscript>
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"your-github-username/your-blog-repo","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js" defer></script>
+<!-- 樱花飘落效果 -->
+<style>
+  .sakura-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  .sakura {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg, #FFB7C5 0%, #FFD6E0 100%);
+    border-radius: 50% 0 50% 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    box-shadow: 0 0 4px rgba(255, 183, 197, 0.6);
+  }
+
+  .sakura::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FFD6E0 0%, #FFB7C5 100%);
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(45deg);
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-20px) rotate(0deg) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg) translateX(100px);
+      opacity: 0;
+    }
+  }
+
+  .sakura:nth-child(odd) {
+    animation-duration: 8s;
+    animation-delay: 0s;
+  }
+
+  .sakura:nth-child(even) {
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+
+  .sakura:nth-child(3n) {
+    animation-duration: 12s;
+    animation-delay: 4s;
+  }
+
+  .sakura:nth-child(3n+1) {
+    width: 8px;
+    height: 8px;
+    animation-duration: 9s;
+  }
+
+  .sakura:nth-child(3n+2) {
+    width: 10px;
+    height: 10px;
+    animation-duration: 11s;
+  }
+
+  .sakura.small {
+    width: 6px;
+    height: 6px;
+  }
+
+  .sakura.large {
+    width: 16px;
+    height: 16px;
+    animation-duration: 14s;
+  }
+</style>
+
+<div class="sakura-container" id="sakura-container"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var container = document.getElementById('sakura-container');
+  var sakuraCount = 25; // 樱花数量
+
+  for (var i = 0; i < sakuraCount; i++) {
+    var sakura = document.createElement('div');
+    sakura.className = 'sakura';
+    
+    // 随机大小
+    var size = Math.random() * 3;
+    if (size < 1) {
+      sakura.classList.add('small');
+    } else if (size > 2) {
+      sakura.classList.add('large');
+    }
+    
+    // 随机水平位置
+    sakura.style.left = Math.random() * 100 + '%';
+    
+    // 随机延迟
+    sakura.style.animationDelay = Math.random() * 10 + 's';
+    
+    // 随机动画持续时间
+    sakura.style.animationDuration = (8 + Math.random() * 6) + 's';
+    
+    // 随机摇摆幅度
+    sakura.style.setProperty('--swing', (Math.random() * 200 - 100) + 'px');
+    
+    container.appendChild(sakura);
+  }
+});
+</script>
 
 </body>
 </html>
