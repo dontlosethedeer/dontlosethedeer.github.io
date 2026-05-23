@@ -2,704 +2,295 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-
-<script class="next-config" data-name="main" type="application/json">{"hostname":"admin.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
-
-    <meta name="description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sakura的个人博客">
-<meta property="og:url" content="https://admin.github.io/index.html">
-<meta property="og:site_name" content="Sakura的个人博客">
-<meta property="og:description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Sakura">
-<meta property="article:tag" content="技术博客,个人博客,Hexo,编程">
-<meta name="twitter:card" content="summary">
-
-
-<link rel="canonical" href="https://admin.github.io/">
-
-
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
-
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Sakura的个人博客</title>
-  
-
-
-
-
-
-
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
-<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
-
-  <main class="main">
-    <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">Sakura的个人博客</h1>
-      <i class="logo-line"></i>
-    </a>
-      <p class="site-subtitle" itemprop="description">记录技术成长与生活感悟</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="搜索" role="button">
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook.html" rel="section"><i class="fa fa-comments fa-fw"></i>guestbook</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-  </ul>
-</nav>
-
-
-
-
-</header>
-        
-  
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Sakura</p>
-  <div class="site-description" itemprop="description">这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。</div>
-</div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author animated">
-      <span class="links-of-author-item">
-        <a href="https://github.com/dontlosethedeer" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dontlosethedeer" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="/guestbook.html" title="留言板 → &#x2F;guestbook.html" rel="noopener me"><i class="fa fa-comments fa-fw"></i>留言板</a>
-      </span>
-  </div>
-
-        </div>
-      </div>
-    </div>
-
-    
-  </aside>
-
-
-    </div>
-
-    <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://admin.github.io/2026/05/23/new-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sakura">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sakura的个人博客">
-      <meta itemprop="description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Sakura的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/05/23/new-post/" class="post-title-link" itemprop="url">CF1807解题报告</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2026-05-23 15:42:49 / 修改时间：16:10:29" itemprop="dateCreated datePublished" datetime="2026-05-23T15:42:49+08:00">2026-05-23</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="CF1807F解题报告"><a href="#CF1807F解题报告" class="headerlink" title="CF1807F解题报告"></a>CF1807F解题报告</h1><h2 id="一-题目链接"><a href="#一-题目链接" class="headerlink" title="一.题目链接"></a>一.题目<a target="_blank" rel="noopener" href="https://codeforces.com/contest/1807/problem/F">链接</a></h2><h2 id="二-原题题面"><a href="#二-原题题面" class="headerlink" title="二.原题题面"></a>二.原题题面</h2><p>You are given a room that can be represented by a n×m grid. There is a ball at position (i1,j1)<br> (the intersection of row i1and column j1), and it starts going diagonally in one of the four directions:</p>
-<p>The ball is going down and right, denoted by DR; it means that after a step, the ball’s location goes from (i,j) to (i+1,j+1)<br>.<br>The ball is going down and left, denoted by DL<br>; it means that after a step, the ball’s location goes from (i,j) to (i+1,j−1)<br>.<br>The ball is going up and right, denoted by UR; it means that after a step, the ball’s location goes from (i,j)<br> to (i−1,j+1)<br>.<br>The ball is going up and left, denoted by UL<br>; it means that after a step, the ball’s location goes from (i,j)<br> to (i−1,j−1).<br>After each step, the ball maintains its direction unless it hits a wall (that is, the direction takes it out of the room’s bounds in the next step). In this case, the ball’s direction gets flipped along the axis of the wall; if the ball hits a corner, both directions get flipped. Any instance of this is called a bounce. The ball never stops moving.<br>Input<br>The first line contains a single integer t(1≤t≤1000) — the number of test cases.</p>
-<p>The first line of each test case contains six integers and a string n,m,i1,j1,i2,j2,d<br> (2≤n,m≤25000; 1≤i1,i2≤n; 1≤j1,j2≤m; d∈{DR,DL,UR,UL}) — the dimensions of the grid, the starting coordinates of the ball, the coordinates of the final cell and the starting direction of the ball.</p>
-<p>It is guaranteed that the sum of n⋅m<br> over all test cases does not exceed 5⋅$10^4$.<br> Output<br>For each test case, output a single integer — the number of bounces the ball does until it reaches cell (i2,j2)for the first time, or −1 if the ball never reaches the final cell.</p>
-<h2 id="三-题意-解题思路"><a href="#三-题意-解题思路" class="headerlink" title="三.题意+解题思路"></a>三.题意+解题思路</h2><h3 id="1-题意："><a href="#1-题意：" class="headerlink" title="1.题意："></a>1.题意：</h3><p> 一个小球从给定的(i1,j1)出发，按照d方向（DR：右下，DL：左下， UR：右上，UL：左上）开始弹射，碰到墙时沿墙的前进方向不变，垂直墙的前进方向相反；碰到角落时两个方向均改变，若能到(i2,j2)输出弹射次数，否则输出-1</p>
-<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路"></a>2.解题思路</h3><p> 查找是否存在可行路径到达目标点，我们可以采用DFS的方法。每次计算出反弹的点的位置，并记录在tuple中表示已访问，同时判断目标点是否在前一个反弹点与当前反弹点所形成的线段上（可以通过叉积与是否在两点为对角线所形成的长方形内判断是否在线段内），若有，则找到，DFS结束，输出弹射次数，若无，继续DFS。如果发现反弹点已经记录在tuple中，则说明到不了目标点，DFS结束，输出-1。</p>
-<h2 id="四-源代码"><a href="#四-源代码" class="headerlink" title="四.源代码"></a>四.源代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> cnt,i2,j2,n,m;</span><br><span class="line">set&lt;tuple&lt;<span class="type">int</span>,<span class="type">int</span>,string&gt; &gt;visited;<span class="comment">//记录该反弹点是否已访问 </span></span><br><span class="line">map&lt;<span class="type">char</span>,<span class="type">char</span>&gt;mp=&#123;&#123;<span class="string">&#x27;U&#x27;</span>,<span class="string">&#x27;D&#x27;</span>&#125;,&#123;<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;U&#x27;</span>&#125;,&#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;R&#x27;</span>&#125;,&#123;<span class="string">&#x27;R&#x27;</span>,<span class="string">&#x27;L&#x27;</span>&#125;&#125;;<span class="comment">//反弹后改变的方向 </span></span><br><span class="line">map&lt;<span class="type">char</span>,<span class="type">char</span>&gt;add=&#123;&#123;<span class="string">&#x27;U&#x27;</span>,<span class="string">&#x27;-&#x27;</span>&#125;,&#123;<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;+&#x27;</span>&#125;,&#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;-&#x27;</span>&#125;,&#123;<span class="string">&#x27;R&#x27;</span>,<span class="string">&#x27;+&#x27;</span>&#125;&#125;;<span class="comment">//标记位移方向 </span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">onsegment</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> x1,<span class="type">int</span> y1,<span class="type">int</span> x2,<span class="type">int</span> y2)</span><span class="comment">//用叉积为0和在两个反弹点形成的长方形内判断在线段上 </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>((x-x1)*(y2-y1)!=(y-y1)*(x2-x1)) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	<span class="type">int</span> minx=<span class="built_in">min</span>(x1,x2),maxx=<span class="built_in">max</span>(x1,x2);</span><br><span class="line">	<span class="type">int</span> miny=<span class="built_in">min</span>(y1,y2),maxy=<span class="built_in">max</span>(y1,y2);</span><br><span class="line">	<span class="keyword">return</span> x&gt;=minx&amp;&amp;x&lt;=maxx&amp;&amp;y&gt;=miny&amp;&amp;y&lt;=maxy;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,string s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">auto</span> state=<span class="built_in">make_tuple</span>(x,y,s);</span><br><span class="line">	<span class="keyword">if</span>(visited.<span class="built_in">count</span>(state)) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	visited.<span class="built_in">insert</span>(state);</span><br><span class="line">	<span class="type">int</span> dy,dx;</span><br><span class="line">	<span class="keyword">if</span>(s[<span class="number">0</span>]==<span class="string">&#x27;U&#x27;</span>)  dy=x<span class="number">-1</span>;<span class="comment">//计算离边界的距离 </span></span><br><span class="line">	<span class="keyword">else</span> dy=n-x;</span><br><span class="line">	<span class="keyword">if</span>(s[<span class="number">1</span>]==<span class="string">&#x27;L&#x27;</span>) dx=y<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">else</span> dx=m-y;</span><br><span class="line">	<span class="type">char</span> xplus=add[s[<span class="number">0</span>]];<span class="comment">//x方向位移是正还是负 </span></span><br><span class="line">	<span class="type">char</span> yplus=add[s[<span class="number">1</span>]];<span class="comment">//y方向位移是正还是负</span></span><br><span class="line">	<span class="type">int</span> deltax,deltay; </span><br><span class="line">	<span class="type">int</span> newx,newy; </span><br><span class="line">	<span class="keyword">if</span>(dx==dy)<span class="comment">//说明在角落反弹 </span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(xplus==<span class="string">&#x27;+&#x27;</span>) newx=x+dx;<span class="comment">//计算x方向上反弹点坐标 </span></span><br><span class="line">		<span class="keyword">else</span> newx=x-dx;</span><br><span class="line">		<span class="keyword">if</span>(yplus==<span class="string">&#x27;+&#x27;</span>) newy=y+dy;<span class="comment">//计算y方向反弹点坐标 </span></span><br><span class="line">		<span class="keyword">else</span> newy=y-dy;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">onsegment</span>(i2,j2,x,y,newx,newy)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		s[<span class="number">0</span>]=mp[s[<span class="number">0</span>]];<span class="comment">//两者都反向 </span></span><br><span class="line">		s[<span class="number">1</span>]=mp[s[<span class="number">1</span>]];</span><br><span class="line">		</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">if</span>(dx&lt;dy)<span class="comment">//dx小，都改变dx </span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(xplus==<span class="string">&#x27;+&#x27;</span>) newx=x+dx;</span><br><span class="line">		<span class="keyword">else</span> newx=x-dx;</span><br><span class="line">		<span class="keyword">if</span>(yplus==<span class="string">&#x27;+&#x27;</span>) newy=y+dx;</span><br><span class="line">		<span class="keyword">else</span> newy=y-dx;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">onsegment</span>(i2,j2,x,y,newx,newy)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		s[<span class="number">1</span>]=mp[s[<span class="number">1</span>]];</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(dx&gt;dy)<span class="comment">//dy小，都改变dy </span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(xplus==<span class="string">&#x27;+&#x27;</span>) newx=x+dy;</span><br><span class="line">		<span class="keyword">else</span> newx=x-dy;</span><br><span class="line">		<span class="keyword">if</span>(yplus==<span class="string">&#x27;+&#x27;</span>) newy=y+dy;</span><br><span class="line">		<span class="keyword">else</span> newy=y-dy;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">onsegment</span>(i2,j2,x,y,newx,newy)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		s[<span class="number">0</span>]=mp[s[<span class="number">0</span>]];</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	cnt++;<span class="comment">//记录反弹次数 </span></span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">dfs</span>(newx,newy,s))<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> i1,j1;</span><br><span class="line">	string d;</span><br><span class="line">	cin&gt;&gt;n&gt;&gt;m&gt;&gt;i1&gt;&gt;j1&gt;&gt;i2&gt;&gt;j2;</span><br><span class="line">	cin&gt;&gt;d;</span><br><span class="line">	visited.<span class="built_in">clear</span>();</span><br><span class="line">	cnt=<span class="number">0</span>; </span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">dfs</span>(i1,j1,d))cout&lt;&lt;cnt&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">else</span> cout&lt;&lt;<span class="number">-1</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> t;</span><br><span class="line">	cin&gt;&gt;t;</span><br><span class="line">	<span class="keyword">while</span>(t--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">solve</span>();</span><br><span class="line">	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://admin.github.io/2026/05/17/new-post-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sakura">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sakura的个人博客">
-      <meta itemprop="description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Sakura的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/05/17/new-post-1/" class="post-title-link" itemprop="url">new post</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-05-17 20:20:41" itemprop="dateCreated datePublished" datetime="2026-05-17T20:20:41+08:00">2026-05-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-05-23 16:09:14" itemprop="dateModified" datetime="2026-05-23T16:09:14+08:00">2026-05-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">技术博客</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="This-is-my-new-post"><a href="#This-is-my-new-post" class="headerlink" title="This is my new post"></a>This is my new post</h2>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://admin.github.io/2026/05/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sakura">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sakura的个人博客">
-      <meta itemprop="description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Sakura的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/05/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-05-17 19:16:48" itemprop="dateCreated datePublished" datetime="2026-05-17T19:16:48+08:00">2026-05-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-05-23 16:09:14" itemprop="dateModified" datetime="2026-05-23T16:09:14+08:00">2026-05-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">技术博客</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://admin.github.io/2026/05/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sakura">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sakura的个人博客">
-      <meta itemprop="description" content="这是一个使用Hexo搭建的个人博客，分享技术文章、学习笔记和生活感悟。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Sakura的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/05/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-05-17 19:16:48" itemprop="dateCreated datePublished" datetime="2026-05-17T19:16:48+08:00">2026-05-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-05-23 16:09:14" itemprop="dateModified" datetime="2026-05-23T16:09:14+08:00">2026-05-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">技术博客</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="欢迎来到我的个人博客！"><a href="#欢迎来到我的个人博客！" class="headerlink" title="欢迎来到我的个人博客！"></a>欢迎来到我的个人博客！</h1><p>这是我的第一篇博客文章，我很高兴能在这里与大家分享我的技术成长和生活感悟。</p>
-<h2 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h2><p>这个博客是使用 <strong>Hexo</strong> 静态站点生成器搭建的，主题采用了简洁美观的 <strong>Next</strong> 主题。</p>
-<h2 id="我会分享什么？"><a href="#我会分享什么？" class="headerlink" title="我会分享什么？"></a>我会分享什么？</h2><ul>
-<li><strong>技术文章</strong>：包括编程技巧、框架学习、工具使用等</li>
-<li><strong>学习笔记</strong>：记录我的学习历程和心得</li>
-<li><strong>生活感悟</strong>：分享生活中的点滴和思考</li>
-</ul>
-<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
-<li><strong>框架</strong>: Hexo</li>
-<li><strong>主题</strong>: Next</li>
-<li><strong>语言</strong>: Markdown</li>
-<li><strong>部署</strong>: GitHub Pages (后续)</li>
-</ul>
-<h2 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">helloWorld</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;欢迎来到我的博客！&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">helloWorld</span>();</span><br></pre></td></tr></table></figure>
-
-<p>感谢您的访问，希望这里的内容能对你有所帮助！</p>
-<hr>
-<p><em>这是我的第一篇博客，期待未来能分享更多有价值的内容。</em></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2026</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">Sakura</span>
-  </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
-
-    </div>
-  </footer>
-
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-  <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"your-github-username/your-blog-repo","issue_term":"pathname","theme":"github-light"}</script>
-<script src="/js/third-party/comments/utterances.js" defer></script>
-<!-- 樱花飘落效果 -->
-<style>
-  .sakura-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 9999;
-  }
-
-  .sakura {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: linear-gradient(135deg, #FFB7C5 0%, #FFD6E0 100%);
-    border-radius: 50% 0 50% 50%;
-    opacity: 0.8;
-    animation: fall linear infinite;
-    box-shadow: 0 0 4px rgba(255, 183, 197, 0.6);
-  }
-
-  .sakura::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #FFD6E0 0%, #FFB7C5 100%);
-    border-radius: 50% 0 50% 50%;
-    transform: rotate(45deg);
-  }
-
-  @keyframes fall {
-    0% {
-      transform: translateY(-20px) rotate(0deg) translateX(0);
-      opacity: 0;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura的个人博客</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    10% {
-      opacity: 0.8;
+
+    body {
+      font-family: 'Quicksand', 'Ma Shan Zheng', sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #a8d8ea 0%, #ffb6c1 50%, #ffc0cb 100%);
+      padding: 40px 20px;
     }
-    90% {
+
+    .timeline-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
+      border-radius: 2px;
+    }
+
+    .timeline-title {
+      text-align: center;
+      font-family: 'Ma Shan Zheng', cursive;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      margin-bottom: 50px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      display: flex;
+    }
+
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(255,154,158,0.4);
+      z-index: 2;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-dot:hover {
+      transform: translateX(-50%) scale(1.2);
+      box-shadow: 0 6px 25px rgba(255,154,158,0.6);
+    }
+
+    .timeline-dot i {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .timeline-content {
+      width: 45%;
+      padding: 20px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .timeline-content a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .timeline-date {
+      font-size: 0.9rem;
+      color: #ff9a9e;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .timeline-post-title {
+      font-family: 'Ma Shan Zheng', cursive;
+      font-size: 1.5rem;
+      color: #5c5c5c;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .timeline-post-title i {
+      color: #ffb6c1;
+    }
+
+    .timeline-excerpt {
+      font-size: 0.95rem;
+      color: #888;
+      line-height: 1.6;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .timeline-meta {
+      display: flex;
+      gap: 15px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .timeline-meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .back-door {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 15px 40px;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 20px rgba(255,154,158,0.4);
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    .back-door:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255,154,158,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: column !important;
+        padding-left: 60px;
+      }
+
+      .timeline-dot {
+        left: 20px;
+      }
+
+      .timeline-content {
+        width: 100%;
+      }
+    }
+
+    .sakura-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .sakura-petal {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(135deg, #fff0f5, #ffb6c1);
+      border-radius: 50% 0 50% 50%;
       opacity: 0.6;
+      animation: fall linear infinite;
     }
-    100% {
-      transform: translateY(100vh) rotate(720deg) translateX(100px);
-      opacity: 0;
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-20px) rotate(0deg);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
     }
-  }
+  </style>
+</head>
+<body>
+  <div class="sakura-bg" id="sakuraBg"></div>
 
-  .sakura:nth-child(odd) {
-    animation-duration: 8s;
-    animation-delay: 0s;
-  }
+  <div class="timeline-container">
+    <h1 class="timeline-title">🌸 Sakura's Blog 🌸</h1>
 
-  .sakura:nth-child(even) {
-    animation-duration: 10s;
-    animation-delay: 2s;
-  }
+    <% page.posts.each(function(post) { %>
+      <div class="timeline-item">
+        <div class="timeline-dot" onclick="location.href='<%= post.path %>'">
+          <i class="fas fa-pen-nib"></i>
+        </div>
+        <div class="timeline-content">
+          <a href="<%= post.path %>">
+            <div class="timeline-date">
+              <i class="far fa-calendar-alt"></i> <%= post.date.format('YYYY-MM-DD') %>
+            </div>
+            <h2 class="timeline-post-title">
+              <i class="fas fa-book-open"></i>
+              <%= post.title %>
+            </h2>
+            <% if (post.excerpt) { %>
+              <p class="timeline-excerpt"><%= post.excerpt %></p>
+            <% } %>
+            <div class="timeline-meta">
+              <% if (post.categories && post.categories.length) { %>
+                <span><i class="fas fa-folder"></i> <%= post.categories.data[0].name %></span>
+              <% } %>
+              <% if (post.tags && post.tags.length) { %>
+                <span><i class="fas fa-tag"></i> <%= post.tags.data[0].name %></span>
+              <% } %>
+            </div>
+          </a>
+        </div>
+      </div>
+    <% }); %>
 
-  .sakura:nth-child(3n) {
-    animation-duration: 12s;
-    animation-delay: 4s;
-  }
+    <a href="/" class="back-door">
+      <i class="fas fa-door-open"></i> 返回樱花门
+    </a>
+  </div>
 
-  .sakura:nth-child(3n+1) {
-    width: 8px;
-    height: 8px;
-    animation-duration: 9s;
-  }
+  <script>
+    function createSakura() {
+      const container = document.getElementById('sakuraBg');
+      const petal = document.createElement('div');
+      petal.className = 'sakura-petal';
 
-  .sakura:nth-child(3n+2) {
-    width: 10px;
-    height: 10px;
-    animation-duration: 11s;
-  }
+      const startX = Math.random() * window.innerWidth;
+      const duration = 10 + Math.random() * 5;
+      const size = 8 + Math.random() * 8;
 
-  .sakura.small {
-    width: 6px;
-    height: 6px;
-  }
+      petal.style.left = startX + 'px';
+      petal.style.width = size + 'px';
+      petal.style.height = size + 'px';
+      petal.style.animationDuration = duration + 's';
 
-  .sakura.large {
-    width: 16px;
-    height: 16px;
-    animation-duration: 14s;
-  }
-</style>
+      container.appendChild(petal);
 
-<div class="sakura-container" id="sakura-container"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var container = document.getElementById('sakura-container');
-  var sakuraCount = 25; // 樱花数量
-
-  for (var i = 0; i < sakuraCount; i++) {
-    var sakura = document.createElement('div');
-    sakura.className = 'sakura';
-    
-    // 随机大小
-    var size = Math.random() * 3;
-    if (size < 1) {
-      sakura.classList.add('small');
-    } else if (size > 2) {
-      sakura.classList.add('large');
+      setTimeout(() => {
+        petal.remove();
+      }, (duration + 1) * 1000);
     }
-    
-    // 随机水平位置
-    sakura.style.left = Math.random() * 100 + '%';
-    
-    // 随机延迟
-    sakura.style.animationDelay = Math.random() * 10 + 's';
-    
-    // 随机动画持续时间
-    sakura.style.animationDuration = (8 + Math.random() * 6) + 's';
-    
-    // 随机摇摆幅度
-    sakura.style.setProperty('--swing', (Math.random() * 200 - 100) + 'px');
-    
-    container.appendChild(sakura);
-  }
-});
-</script>
 
+    setInterval(createSakura, 400);
+    for (let i = 0; i < 10; i++) {
+      setTimeout(createSakura, i * 300);
+    }
+  </script>
 </body>
 </html>
