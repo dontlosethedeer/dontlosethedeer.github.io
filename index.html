@@ -222,6 +222,29 @@
         opacity: 0;
       }
     }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #fff;
+    }
+
+    .empty-state i {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .empty-state h2 {
+      font-family: 'Ma Shan Zheng', cursive;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .empty-state p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
@@ -230,35 +253,105 @@
   <div class="timeline-container">
     <h1 class="timeline-title">🌸 Sakura's Blog 🌸</h1>
 
-    <% page.posts.each(function(post) { %>
-      <div class="timeline-item">
-        <div class="timeline-dot" onclick="location.href='<%= post.path %>'">
-          <i class="fas fa-pen-nib"></i>
+    
+      
+        <div class="timeline-item">
+          <div class="timeline-dot" onclick="location.href='/2026/05/23/new-post/'">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="timeline-content">
+            <a href="/2026/05/23/new-post/">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> 2026-05-23
+              </div>
+              <h2 class="timeline-post-title">
+                <i class="fas fa-book-open"></i>
+                CF1807解题报告
+              </h2>
+              
+              <div class="timeline-meta">
+                
+                
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="timeline-content">
-          <a href="<%= post.path %>">
-            <div class="timeline-date">
-              <i class="far fa-calendar-alt"></i> <%= post.date.format('YYYY-MM-DD') %>
-            </div>
-            <h2 class="timeline-post-title">
-              <i class="fas fa-book-open"></i>
-              <%= post.title %>
-            </h2>
-            <% if (post.excerpt) { %>
-              <p class="timeline-excerpt"><%= post.excerpt %></p>
-            <% } %>
-            <div class="timeline-meta">
-              <% if (post.categories && post.categories.length) { %>
-                <span><i class="fas fa-folder"></i> <%= post.categories.data[0].name %></span>
-              <% } %>
-              <% if (post.tags && post.tags.length) { %>
-                <span><i class="fas fa-tag"></i> <%= post.tags.data[0].name %></span>
-              <% } %>
-            </div>
-          </a>
+      
+        <div class="timeline-item">
+          <div class="timeline-dot" onclick="location.href='/2026/05/17/new-post-1/'">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="timeline-content">
+            <a href="/2026/05/17/new-post-1/">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> 2026-05-17
+              </div>
+              <h2 class="timeline-post-title">
+                <i class="fas fa-book-open"></i>
+                new post
+              </h2>
+              
+              <div class="timeline-meta">
+                
+                  <span><i class="fas fa-folder"></i> 技术博客</span>
+                
+                
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-    <% }); %>
+      
+        <div class="timeline-item">
+          <div class="timeline-dot" onclick="location.href='/2026/05/17/hello-world/'">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="timeline-content">
+            <a href="/2026/05/17/hello-world/">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> 2026-05-17
+              </div>
+              <h2 class="timeline-post-title">
+                <i class="fas fa-book-open"></i>
+                Hello World
+              </h2>
+              
+              <div class="timeline-meta">
+                
+                  <span><i class="fas fa-folder"></i> 技术博客</span>
+                
+                
+              </div>
+            </a>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-dot" onclick="location.href='/2026/05/17/我的第一篇博客/'">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="timeline-content">
+            <a href="/2026/05/17/我的第一篇博客/">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> 2026-05-17
+              </div>
+              <h2 class="timeline-post-title">
+                <i class="fas fa-book-open"></i>
+                我的第一篇博客
+              </h2>
+              
+              <div class="timeline-meta">
+                
+                  <span><i class="fas fa-folder"></i> 技术博客</span>
+                
+                
+                  <span><i class="fas fa-tag"></i> 欢迎</span>
+                
+              </div>
+            </a>
+          </div>
+        </div>
+      
+    
 
     <a href="/" class="back-door">
       <i class="fas fa-door-open"></i> 返回樱花门
@@ -267,13 +360,14 @@
 
   <script>
     function createSakura() {
-      const container = document.getElementById('sakuraBg');
-      const petal = document.createElement('div');
+      var container = document.getElementById('sakuraBg');
+      if (!container) return;
+      var petal = document.createElement('div');
       petal.className = 'sakura-petal';
 
-      const startX = Math.random() * window.innerWidth;
-      const duration = 10 + Math.random() * 5;
-      const size = 8 + Math.random() * 8;
+      var startX = Math.random() * window.innerWidth;
+      var duration = 10 + Math.random() * 5;
+      var size = 8 + Math.random() * 8;
 
       petal.style.left = startX + 'px';
       petal.style.width = size + 'px';
@@ -282,13 +376,13 @@
 
       container.appendChild(petal);
 
-      setTimeout(() => {
+      setTimeout(function() {
         petal.remove();
       }, (duration + 1) * 1000);
     }
 
     setInterval(createSakura, 400);
-    for (let i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
       setTimeout(createSakura, i * 300);
     }
   </script>
