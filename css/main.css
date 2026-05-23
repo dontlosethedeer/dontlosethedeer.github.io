@@ -186,8 +186,8 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Ma Shan Zheng, Quicksand, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 1.1em;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1em;
   line-height: 2;
   min-height: 100%;
   position: relative;
@@ -199,7 +199,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Ma Shan Zheng, Poppins, Ma Shan Zheng, Quicksand, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -1080,8 +1080,8 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Ma Shan Zheng, Ma Shan Zheng, Quicksand, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 2.5em;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
@@ -1223,7 +1223,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #d116ff;
+    background: #ad58a6;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1845,7 +1845,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Ma Shan Zheng, Quicksand, Ma Shan Zheng, Quicksand, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2034,7 +2034,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Ma Shan Zheng, Quicksand, Ma Shan Zheng, Quicksand, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
