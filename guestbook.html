@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
@@ -26,8 +26,8 @@
 <meta property="og:site_name" content="Sakura的个人博客">
 <meta property="og:description" content="🌸 留言板 - Sakura的个人博客           * {       margin: 0;       padding: 0;       box-sizing: border-box;     }          body {       font-family: &#39;Ma Shan Zheng&#39;, &#39;PingFang SC&#39;, &#39;Hiragino Sans G">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-23T06:24:30.024Z">
-<meta property="article:modified_time" content="2026-05-23T06:24:30.024Z">
+<meta property="article:published_time" content="2026-05-23T06:29:22.519Z">
+<meta property="article:modified_time" content="2026-05-23T06:29:22.519Z">
 <meta property="article:author" content="Sakura">
 <meta property="article:tag" content="技术博客,个人博客,Hexo,编程">
 <meta name="twitter:card" content="summary">
@@ -333,8 +333,41 @@
       gap: 10px;
     }
 
-    .success-message i {
+    .error-message {
+      margin-top: 20px;
+      padding: 15px;
+      background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+      border-radius: 10px;
+      text-align: center;
+      color: #C62828;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .success-message i,
+    .error-message i {
       font-size: 24px;
+    }
+
+    .mailto-option {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(74, 144, 217, 0.05);
+      border-radius: 10px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .mailto-option a {
+      color: #4A90D9;
+      text-decoration: none;
+    }
+
+    .mailto-option a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -365,7 +398,7 @@
       <h2 class="guestbook-title">🌸 给我留言</h2>
       <p class="guestbook-desc">欢迎留下你的足迹，我会收到你的消息！</p>
       
-      <form id="guestbook-form" action="https://formspree.io/f/xknayqaa" method="POST" class="guestbook-form">
+      <form id="guestbook-form" class="guestbook-form">
         <div class="form-group">
           <label for="name">你的名字 ✨</label>
           <input type="text" id="name" name="name" placeholder="请输入你的名字" required>
@@ -390,11 +423,20 @@
           <i class="fa fa-check-circle"></i>
           <p>留言成功！我会尽快回复你~ 🌸</p>
         </div>
+        
+        <div id="form-error" class="error-message">
+          <i class="fa fa-exclamation-circle"></i>
+          <p>发送失败，请使用下方邮箱链接发送</p>
+        </div>
+        
+        <div class="mailto-option">
+          <p>📧 或者直接发送邮件到：<a href="mailto:xiyupan68@gmail.com?subject=来自博客的留言&body=你的名字：%0D%0A你的邮箱：%0D%0A留言内容：">xiyupan68@gmail.com</a></p>
+        </div>
       </form>
     </div>
 
     <footer>
-      <p><a href="/">返回首页</a> | <a href="/guestbook">留言板</a></p>
+      <p><a href="/">返回首页</a> | <a href="/guestbook.html">留言板</a></p>
     </footer>
   </div>
 
@@ -404,28 +446,51 @@
       
       const submitBtn = this.querySelector('.submit-btn');
       const successMsg = document.getElementById('form-success');
+      const errorMsg = document.getElementById('form-error');
       
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> <span>发送中...</span>';
+      successMsg.style.display = 'none';
+      errorMsg.style.display = 'none';
       
-      fetch(this.action, {
-        method: this.method,
-        body: new FormData(this),
+      const formData = new FormData(this);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+      };
+      
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
-        }
+        },
+        body: JSON.stringify({
+          access_key: '766b19c5-c502-49a3-a0b2-287994987b35',
+          subject: `博客留言 - ${data.name}`,
+          email: data.email,
+          message: `姓名: ${data.name}\n邮箱: ${data.email}\n留言: ${data.message}`
+        })
       }).then(response => {
         if (response.ok) {
+          return response.json();
+        }
+        throw new Error('网络错误');
+      }).then(result => {
+        if (result.success) {
           successMsg.style.display = 'flex';
           this.reset();
           submitBtn.style.display = 'none';
         } else {
-          alert('发送失败，请稍后重试');
+          throw new Error(result.message || '发送失败');
         }
       }).catch(error => {
-        alert('发送失败，请稍后重试');
+        console.error('Error:', error);
+        errorMsg.style.display = 'flex';
       }).finally(() => {
         submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>发送留言</span> <i class="fa fa-paper-plane"></i>';
       });
     });
   </script>
